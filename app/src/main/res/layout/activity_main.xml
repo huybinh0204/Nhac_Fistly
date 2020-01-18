@@ -7,7 +7,20 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
+    <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="0dp"
+        android:id="@+id/myViewPager"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myTabLayout"
+        app:tabIndicatorColor="#2E8B57"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#2E8B57"
+        app:tabTextColor="#000000"
+        app:tabIndicatorHeight="2dp"
+        android:background="@android:color/transparent"/>
 </LinearLayout>
