@@ -1,5 +1,6 @@
 package com.example.nhac_fistly.Activity;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -21,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
         anhXa();
 
         init();
@@ -29,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
         MainViewPagerAdapter mainViewPagerAdapter= new MainViewPagerAdapter(getSupportFragmentManager());
-        mainViewPagerAdapter.addFragment(new Fragment_Trang_Chu(),"Home");
-        mainViewPagerAdapter.addFragment(new Fragment_Tim_Kiem(),"Search");
-        mainViewPagerAdapter.addFragment(new Fragment_Thong_Tin_App(),"Information");
+        mainViewPagerAdapter.addFragment(new Fragment_Trang_Chu(), "");
+        mainViewPagerAdapter.addFragment(new Fragment_Tim_Kiem(),"");
+        mainViewPagerAdapter.addFragment(new Fragment_Thong_Tin_App(),"");
         viewPager.setAdapter(mainViewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.getTabAt(0).setIcon(R.drawable.icontrangchu);

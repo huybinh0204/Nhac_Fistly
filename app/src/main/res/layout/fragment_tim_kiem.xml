@@ -1,23 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#483D8B"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ViewFlipper
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:id="@+id/myViewPager"
-            android:background="@color/colorPrimary"/>
-        <me.relex.circleindicator.CircleIndicator
-            android:layout_width="wrap_content"
-            android:layout_height="13dp"
-            android:id="@+id/indicatordefault"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentRight="true"/>
-    </RelativeLayout>
+            android:layout_height="match_parent">
 
-</ScrollView>
+            <TextView
+                android:id="@+id/textviewkhongcodulieu"
+                android:textSize="35sp"
+                android:text="Không có dữ liệu bài hát"
+                android:textColor="#F0E68C"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewsearchbaihat"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"/>
+
+
+            <EditText
+                android:hint="Nhập tên bài hát"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:background="@drawable/duongvien_goctron"
+                android:id="@+id/edittextSearchbaihat"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+            <ImageButton
+                android:background="@drawable/duongvien_goctron2"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:id="@+id/imagebuttonSearchbaihat"
+                android:src="@drawable/icontimkiem"
+                android:layout_width="120dp"
+                android:layout_height="35dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
