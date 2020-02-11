@@ -11,7 +11,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:gravity="center"
-        android:text="ABCD"
+        android:text="Giai điệu cảm xúc"
         android:textColor="#3e3b3b"
         android:textSize="30sp" />
 
