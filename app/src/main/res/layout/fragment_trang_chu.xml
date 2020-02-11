@@ -19,7 +19,7 @@
         <fragment
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:name="com.example.nhac_fistly.Fragment.Fragment_Banner"
+            android:name="com.example.nhac_fistly.Fragment.Fragment_Playlist"
             android:id="@+id/fragmentplaylist"/>
 
 

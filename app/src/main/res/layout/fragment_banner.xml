@@ -7,10 +7,10 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ViewFlipper
+        <androidx.viewpager.widget.ViewPager
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:id="@+id/myViewPager"
+            android:id="@+id/viewpager"
             android:background="@color/colorPrimary"/>
         <me.relex.circleindicator.CircleIndicator
             android:layout_width="wrap_content"
