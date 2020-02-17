@@ -8,20 +8,18 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.nhac_fistly.R;
 
-public class Fragment_Album_Hot extends Fragment {
+public class Fragment_Play_Danh_Sach_Cac_Bai_Hat extends Fragment {
     View view;
-
+    RecyclerView recyclerViewplaynhac;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_album_hot, container, false);
-        GetData();
+        view = inflater.inflate(R.layout.fragment_play_danh_sach_cac_bai_hat, container, false);
+        recyclerViewplaynhac = view.findViewById(R.id.recyclerviewPlaybaihat);
         return view;
-    }
-    private void GetData(){
-
     }
 }

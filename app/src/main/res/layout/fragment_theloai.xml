@@ -13,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tvchudetheloai"
-            android:text="Chủ đề - Thể loại"
+            android:text="THỂ LOẠI"
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#000000"/>
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tvxemthem"
             android:layout_alignParentRight="true"
-            android:text="Xem thêm"
+            android:text="Xem Thêm"
             android:textSize="18sp"
             android:textColor="#228B22"/>
     </RelativeLayout>
