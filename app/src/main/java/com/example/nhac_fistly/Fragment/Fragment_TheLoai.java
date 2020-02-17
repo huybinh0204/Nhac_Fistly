@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.nhac_fistly.R;
 
-public class Fragment_ChuDe_TheLoai_ToDay extends Fragment {
+public class Fragment_TheLoai extends Fragment {
     View view;
     HorizontalScrollView horizontalScrollView;
     TextView txtxemthem;
@@ -20,7 +20,7 @@ public class Fragment_ChuDe_TheLoai_ToDay extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_chude_theloai_today, container, false);
+        view = inflater.inflate(R.layout.fragment_theloai, container, false);
         horizontalScrollView = view.findViewById(R.id.horizontalscrollview);
         txtxemthem = view.findViewById(R.id.tvxemthem);
         return view;

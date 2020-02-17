@@ -1,5 +1,7 @@
 package com.example.nhac_fistly.Service;
 
+import com.example.nhac_fistly.Model.Album;
+import com.example.nhac_fistly.Model.Chude;
 import com.example.nhac_fistly.Model.Playlist;
 import com.example.nhac_fistly.Model.Quangcao;
 
@@ -14,4 +16,10 @@ public interface Dataservice {
 
     @GET("Playlist_Get.php")
     Call<List<Playlist>> GetPlaylist();
+
+    @GET("Chude_Get.php")
+    Call<List<Chude>> GetChude();
+
+    @GET("Album_Get.php")
+    Call<List<Album>> GetAlbum();
 }

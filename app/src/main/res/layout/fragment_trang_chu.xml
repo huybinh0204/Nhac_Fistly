@@ -21,7 +21,21 @@
             android:layout_height="wrap_content"
             android:name="com.example.nhac_fistly.Fragment.Fragment_Playlist"
             android:id="@+id/fragmentplaylist"/>
-
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.example.nhac_fistly.Fragment.Fragment_Chude"
+            android:id="@+id/fragmentchude"/>
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.example.nhac_fistly.Fragment.Fragment_TheLoai"
+            android:id="@+id/fragmenttheloai"/>
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.example.nhac_fistly.Fragment.Fragment_Album"
+            android:id="@+id/fragmentalbum"/>
 
     </LinearLayout>
 </ScrollView>

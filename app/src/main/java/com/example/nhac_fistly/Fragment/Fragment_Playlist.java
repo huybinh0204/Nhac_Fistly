@@ -29,7 +29,7 @@ import retrofit2.Response;
 public class Fragment_Playlist extends Fragment {
     View view;
     ListView lvplaylist;
-    TextView txttitleplaylist, txtviewmoreplaylist;
+    TextView txttitleplaylist;
     PlaylistAdapter playlistAdapter;
     ArrayList<Playlist> mangplaylist;
     @Nullable
@@ -38,7 +38,6 @@ public class Fragment_Playlist extends Fragment {
         view = inflater.inflate(R.layout.fragment_playlist, container, false);
         lvplaylist = view.findViewById(R.id.lvplaylist);
         txttitleplaylist = view.findViewById(R.id.tvtitleplaylist);
-        txtviewmoreplaylist = view.findViewById(R.id.tvmoreplaylist);
         GetData();
         return view;
     }

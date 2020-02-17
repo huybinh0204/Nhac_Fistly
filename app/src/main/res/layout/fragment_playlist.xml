@@ -20,22 +20,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvtitleplaylist" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#0a0a0a"
-        android:layout_marginBottom="8dp"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp"
-        android:layout_marginTop="8dp"
-        android:background="#c9c7c7"
-        android:id="@+id/tvmoreplaylist"
-        android:layout_below="@+id/lvplaylist"
-        android:paddingLeft="5dp"
-        android:drawableLeft="@drawable/iconmoreplaylist"
-        android:drawablePadding="10dp"
-        android:textSize="19sp"
-        android:text="Xem Thêm Playlist"
-        />
 
 </RelativeLayout>
