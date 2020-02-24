@@ -29,13 +29,18 @@
         <fragment
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:name="com.example.nhac_fistly.Fragment.Fragment_TheLoai"
+            android:name="com.example.nhac_fistly.Fragment.Fragment_Theloai"
             android:id="@+id/fragmenttheloai"/>
         <fragment
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:name="com.example.nhac_fistly.Fragment.Fragment_Album"
             android:id="@+id/fragmentalbum"/>
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.example.nhac_fistly.Fragment.Fragment_Baihat"
+            android:id="@+id/fragmentbaihat"/>
 
     </LinearLayout>
 </ScrollView>
