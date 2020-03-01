@@ -22,10 +22,11 @@
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <View
-                android:background="@drawable/ic_launcher_foreground"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+<!--            <View-->
+<!--                android:layout_gravity="center"-->
+<!--                android:background="@drawable/bg"-->
+<!--                android:layout_width="2dp"-->
+<!--                android:layout_height="20dp"/>-->
             <androidx.appcompat.widget.Toolbar
                 android:elevation="6dp"
                 android:id="@+id/toolbardanhsachbaihat"

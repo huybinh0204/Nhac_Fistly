@@ -10,7 +10,9 @@ import com.example.nhac_fistly.Model.Theloai;
 import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.http.Field;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 
 public interface Dataservice {
     @GET("Quangcao_Get.php")
@@ -30,4 +32,7 @@ public interface Dataservice {
 
     @GET("Baihat_Get.php")
     Call<List<Baihat>> GetBaihat();
+
+    @POST("Baihat_Get.php")
+    Call<List<Baihat>> GetDanhsachtBaihatthoequangcao(@Field("idquangcao") String id);
 }
